@@ -1,0 +1,11 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+.button{
+    width: 45px !important;
+}
+.advbutton{
+    width: 105px !important;
+}

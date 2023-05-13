@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <link rel="shortcut icon" href="calculator.webp" type="image/x-icon">
+    <title>My First Calculator</title>
+  
+
+<!-- Links & CDNs-->
+
+    <!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<!-- Body Start -->
+
+<!-- Heading -->
+<h1 class="m-auto  mt-2 bg-info-subtle p-2 border rounded-pill w-50 text-center d-flex align-items-center justify-content-center"> MY FIRST CALCULATOR &nbsp; &nbsp;  <img src="calculator.webp" alt="" width="60px"></h1>     
+<!-- Calculator Board -->
+<div class="container m-auto fs-1 my-3 bg-warning-subtle p-2 border border-5 shadow rounded p-0 m-0 w-25 text-center ">
+   <div class="display-flex flex-wrap align-items-center justify-content-center">
+    <div>
+        <input type="text" id="result" class=" shadow bg-info rounded w-100 mt-3 mb-2 mx-auto border border-2" name="" id="">
+    <!-- donot disable (disabled) to write input via keyboard -->
+    </div>
+    <div>
+    <button type="button" onclick="getNum(1)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">1</button>
+    <button type="button" onclick="getNum(2)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">2</button>
+    <button type="button" onclick="getNum(3)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">3</button>
+    <button type="button" onclick="getNum(4)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">4</button>
+    </div>
+<div>
+    <button type="button" onclick="getNum(5)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">5</button>
+    <button type="button" onclick="getNum(6)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">6</button>
+    <button type="button" onclick="getNum(7)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">7</button>
+    <button type="button" onclick="getNum(8)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">8</button>
+</div>
+<div>
+    <button type="button" onclick="getNum(9)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">9</button>
+    <button type="button" onclick="getNum(0)" class="btn btn-info p-3 m-1 shadow rounded button border border-2">0</button>
+    <button type="button" onclick="getOpr('.'); " class="btn btn-info p-3 m-1 shadow rounded button border border-2">.</button>
+    <button type="button" onclick="getOpr('/'); " class="btn btn-info p-3 m-1 shadow rounded button border border-2">/</button>
+</div>
+<div>
+    <button type="button" onclick="getOpr('*'); " class="btn btn-info p-3 m-1 shadow rounded button border border-2">*</button>
+    <button type="button" onclick="getOpr('-'); " class="btn btn-info p-3 m-1 shadow rounded button border border-2">-</button>
+    <button type="button" onclick="getOpr('+'); " class="btn btn-info p-3 m-1 shadow rounded button border border-2">+</button>
+    <button type="button" onclick="getResult()" class="btn btn-info p-3 m-1 shadow rounded button border border-2">=</button>
+    
+</div>
+<div class="display-flex justify-content-around align-items-center">
+    <button type="button" onclick="clearAll()" class="btn btn-info p-3 m-1 shadow rounded advbutton border border-2 px-4">Clear</button>
+    <button type="button" onclick="removeOne()" class="btn btn-info p-3 m-1 shadow rounded advbutton border border-2 px-4 ">Remove</button>
+</div>
+</div>
+</div>
+<!-- Thankyou -->
+<h1 class="m-auto mb-2 bg-info-subtle p-2 border rounded-pill w-50 text-center d-flex align-items-center justify-content-center">HOPE YOU ENJOYED &nbsp; <img width="80px" class=" shadow rounded-circle" src="smile.png" alt=""></h1>
+<!-- Body End -->
+
+
+    <!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+  
+</body>
+</html>
